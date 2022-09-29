@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Calendario -->
+    <div class="container text-center">
+        <div class="row my-sm-4">
+          <div class="col border border-white">Fecha</div>
+          <div class="col"><input class="border rounded-3 border-warning" type="text" placeholder="Día 00" id="inputDia"></div>
+          <div class="col"><input class="border rounded-3 border-warning" type="text" placeholder="Mes 00" id="inputMes"></div>
+          <div class="col"><input class="border rounded-3 border-warning" type="text" placeholder="Año 0000" id="inputAño"></div>
+        </div>
+        <div class="row">
+            <div class="col border border-white">Día de la semana</div>
+            <div class="col border rounded-3 border-warning" id="resultado">Resultado día</div>
+            <div class="col border rounded-3 border-warning" id="laboral">Laboral/no</div>
+        </div>
+        <div class="row">
+            <div class="col my-2"><button type="button" class="btn btn-outline-warning">Calcular</button></div>
+        </div>
+    </div>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
