@@ -7,27 +7,38 @@
     <title>Calendario</title>
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Calendario -->
-    <div class="container text-center">
-        <div class="row my-sm-4">
-          <div class="col border border-white">Fecha</div>
-          <div class="col"><input class="border rounded-3 border-warning" type="text" placeholder="Día 00" id="inputDia"></div>
-          <div class="col"><input class="border rounded-3 border-warning" type="text" placeholder="Mes 00" id="inputMes"></div>
-          <div class="col"><input class="border rounded-3 border-warning" type="text" placeholder="Año 0000" id="inputAño"></div>
-        </div>
+    <!-- Contenedor calendario -->
+    <div class="container border border-2 rounded-4 w-75 border-warning border-opacity-50 p-4 mt-5 p-3 mb-2 bg-white text-dark bg-opacity-75">
+        <!-- Título -->
         <div class="row">
-            <div class="col border border-white">Día de la semana</div>
-            <div class="col border rounded-3 border-warning" id="resultado">Resultado día</div>
-            <div class="col border rounded-3 border-warning" id="laboral">Laboral/no</div>
+            <h1 align="center">😎Súper calendario de días laborales</h1> 
         </div>
-        <div class="row">
-            <div class="col my-2"><button type="button" class="btn btn-outline-warning">Calcular</button></div>
+        <!-- Formulario -->
+        <div class="row mx-auto">
+            <div class="col">
+                <!-- Inputs -->
+                <div class="row gap-2">
+                    <input id="day" class="col-md form-comtrol border rounded-pill border-warning border-opacity-25 text-center" type="number" placeholder="17"/>
+                    <input id="month" class="col-md form-comtrol border rounded-pill border-warning border-opacity-25 text-center" type="number" placeholder="06"/>
+                    <input id="year" class="col-md form-comtrol border rounded-pill border-warning border-opacity-25 text-center" type="number" placeholder="2022"/>
+                </div>
+                <!-- Calcular -->
+                <div class="row mt-2">
+                    <button class="btn btn-warning rounded-pill text-white" onclick="calcularFecha()">Calcular</button>
+                </div>
+                <!-- Resultado -->
+                <div class="row mt-2">
+                    <input id="result" class="border border-warning border-opacity-25 rounded-3 form-control fw-normal  text-center bg-white bg-opacity-50" readonly disabled/>
+                </div>
+            </div>
         </div>
     </div>
     <!-- JS Bootstrap -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- JS funciones -->
     <script src="./script.js"></script>
 </body>
 </html>
